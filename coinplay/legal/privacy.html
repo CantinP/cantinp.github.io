@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Politique de confidentialité — CoinPlay</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;color:#222;background:#fff}@media(prefers-color-scheme:dark){body{background:#151515;color:#ddd}a{color:#8ab4ff}}h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8rem}table{border-collapse:collapse;width:100%;font-size:.88rem}td,th{border:1px solid #8886;padding:.4rem;text-align:left;vertical-align:top}.todo{background:#fff3b0;color:#000;padding:0 .25rem}</style></head><body>
+<h1>Politique de confidentialité — CoinPlay</h1>
+<p>Version 2.0 — 14 novembre 2026. Vaut pour CoinPlay, Empire Card, Sudoku Star, 2048 et Solitaire.</p>
+
+<h2>1. Responsable du traitement</h2>
+<p>Cantin Poiseau (coordonnées dans les <a href="../../mentions-legales.html">mentions légales</a>). Pas de délégué à la protection des données.</p>
+
+<h2>2. Données, finalités, bases légales, durées</h2>
+<table><tr><th>Données</th><th>Finalité</th><th>Base légale</th><th>Durée</th></tr>
+<tr><td>Identifiant de compte anonyme « cp_… » ; empreinte (hash) de la clé secrète ; date de création</td><td>Authentifier le compte, créditer les coins</td><td>Contrat (CGU)</td><td>Durée du compte ; effacement sur demande</td></tr>
+<tr><td>Grand livre : gains (application, date, n° de transaction AdMob, boost), retraits</td><td>Calculer le solde, empêcher la fraude et le rejeu</td><td>Contrat ; intérêt légitime (sécurité)</td><td>Gains : durée du compte. Retraits : 10 ans (obligation comptable)</td></tr>
+<tr><td>Demandes de retrait : méthode, destinataire (e-mail PayPal, IBAN, adresse Bitcoin…), montant</td><td>Payer la récompense</td><td>Contrat ; obligation légale</td><td>10 ans (comptabilité)</td></tr>
+<tr><td>Journaux techniques du serveur (adresse IP, date, requête)</td><td>Sécurité, lutte contre la fraude</td><td>Intérêt légitime ; obligation légale de l'hébergeur</td><td>12 mois maximum</td></tr>
+<tr><td>Identifiant publicitaire de l'appareil, traité par la régie</td><td>Annonces personnalisées</td><td><strong>Consentement</strong> (facultatif)</td><td>Selon la régie ; retrait à tout moment</td></tr>
+<tr><td>Stockage local de l'appareil : compte (<code>coinplay_account_v2</code>, <code>cp_account</code>), solde en cache, choix de consentement (<code>cp_consent_v2</code>), meilleurs scores</td><td>Faire fonctionner le service et mémoriser vos choix</td><td>Strictement nécessaire (exempté de consentement)</td><td>Jusqu'à effacement des données de l'appareil</td></tr></table>
+<p>Aucune donnée n'est vendue. Les jeux 2048 et Solitaire ne conservent que des données locales à l'appareil et ne vous identifient pas.</p>
+
+<h2>3. Destinataires et transferts</h2>
+<p>Google (AdMob) : régie publicitaire, qui agit pour son propre compte pour les annonces ; hébergeur du serveur (<span class="todo">À COMPLÉTER</span>) ; prestataires de paiement (PayPal, banque) pour les retraits uniquement. Google et PayPal peuvent traiter des données hors de l'Union européenne ; ces transferts reposent sur la décision d'adéquation (cadre de protection des données UE–États-Unis) ou les clauses contractuelles types de la Commission européenne.</p>
+
+<h2>4. Vos choix publicitaires</h2>
+<p>À la première ouverture, vous acceptez les CGU (obligatoire) et choisissez séparément les annonces personnalisées (facultatif, refusé par défaut). Refuser ne limite aucune fonction ni aucun gain. Vous changez d'avis à tout moment via « Légal / Mes choix ».</p>
+
+<h2>5. Vos droits</h2>
+<p>Accès et copie, rectification, effacement, limitation, opposition, portabilité, retrait du consentement, directives après décès. Accès et portabilité : <code>GET /v1/me/export</code> (JSON). Effacement : <code>DELETE /v1/me</code> avec confirmation — supprime les gains, invalide la clé et supprime le compte ; les coins restants sont perdus, la demande est refusée tant qu'un retrait est en cours, et les traces de retraits payés sont conservées 10 ans, accès restreint (art. 17.3.b RGPD). Autres demandes : par e-mail (voir mentions légales), réponse sous un mois. Réclamation : <a href="https://www.cnil.fr/fr/plaintes">CNIL</a>.</p>
+
+<h2>6. Décisions automatisées</h2>
+<p>Les plafonds anti-fraude et la vérification des publicités sont automatiques. Un compte suspendu peut demander un réexamen humain par e-mail.</p>
+
+<h2>7. Sécurité</h2>
+<p>Échanges en HTTPS ; la clé secrète n'est stockée que sous forme d'empreinte ; calcul des gains et retraits réalisés uniquement côté serveur ; accès aux données restreint à l'éditeur. En cas de violation présentant un risque, la CNIL (72 h) et les personnes concernées sont informées.</p>
+
+<h2>8. Mineurs</h2>
+<p>Le service est réservé aux 18 ans et plus ; aucune donnée n'est collectée sciemment sur des mineurs. Si vous pensez qu'un mineur a un compte, écrivez-nous : il sera effacé.</p>
+
+<h2>9. Modifications</h2>
+<p>Toute modification substantielle est annoncée dans l'application.</p>
+</body></html>
